@@ -1,0 +1,102 @@
+@font-face {
+    font-family: myFont;
+    src: url(../assests/fonts/Manrope-Medium.ttf);
+    src: url(../assests/fonts/Manrope-Bold.ttf);
+    src: url(../assests/fonts/Manrope-Regular.ttf);
+  }
+body{
+    font-family: myFont;
+    background-color: #F9F7F7;
+}
+.top-bar{
+    position: relative;
+    width: 100%;
+    top: -0.5rem;
+    height: 5rem;
+    padding-top: 2rem;
+    font-size:1.5rem;
+    align-items: center;
+    justify-content: start;
+    background-color: #ffffff;
+}
+#icon-top{
+    position: relative;
+    color: #3F72AF;
+    right: 50%;
+    font-size: 1.7rem;
+    transition: 0.3s;
+}
+span{
+    margin-right: 1vw;
+}
+button span{
+    opacity: 0;
+    font-size: 1.7rem;
+
+    transition: 0.3s;
+    color:#3F72AF
+}
+button{
+    border: none;
+    background-color: inherit;
+    transition: 0.3;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+button:hover > span{
+    display: inline;
+    opacity: 1;
+
+}
+button:hover > #icon-top {
+    right: -10%;
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    height:50rem;
+    
+}
+.userInfo{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    line-height: 1rem;
+    border-radius:1rem;
+    color: #3F72AF;
+    font-size: 1.8rem;
+    height: fit-content;
+}
+.tabsContainer{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+.tab{
+    display: inline-block;
+    width:max(17rem,30%);
+    margin: 1rem;
+    background-color: #ffffff;
+    border-radius:1.5rem;
+    height: 200px;
+    color: #3F72AF;
+    font-size: 2rem;
+    transition: 0.3s;
+    padding: 1rem;
+    box-shadow: rgba(101, 101, 101, 0.2) 0px 10px 8px;
+}
+.tab:hover {
+    color: #F9F7F7;
+    background-color: #3F72AF;
+    transform: translate(0,-1rem);
+
+}
+#icon{
+    position: relative;
+    top:2rem;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+

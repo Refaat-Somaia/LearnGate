@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/43ae18d6cd.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/courses-mng.css">
+    <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+
+
+</head>
+<body>
+    <!-- <div class="spinner"><div class="loader"></div></div> -->
+    <div class="top-bar">
+
+        <button class="top-bar-btn" onclick="window.location.href='index.html'"><span>Log out</span><i id="icon-top" class="fa-solid fa-arrow-right-from-bracket" >
+        </i></button>
+        <button class="top-bar-btn" onclick="window.location.href='managemnt.html'"><span>Dashboard</span>
+            <i id="icon-top" class="fa-solid fa-table-cells-large"></i></button>
+            
+    </div>
+
+
+    <div class="control-bar">
+        <input placeholder="Search" type="text" id="search">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button id="registerBtn">Open new course<i style="margin-left: 0.5rem;"class="fa-solid fa-book"></i></button>
+    </div>
+    <div class="container">
+  
+    </div>
+    <div  id="popup" class="popup">
+        <div style="position: sticky;">
+            <i style="top: 1rem; left: 52%;" onclick="close" id="closePopup" runat="server" class="fa-regular fa-rectangle-xmark fa-xl"></i>
+            <span style="font-size: 4vh; ">Course info</span>
+        </div>
+       
+        <div class="input-container">
+            <input disabled type="text" id="title">
+            <input disabled type="text" id="id">
+            <button >Enroll new student</button>
+            <button >Remove student</button>
+            <button >Enroll new student</button>
+
+        </div>
+        <ul id="studentsList" >
+   
+        </ul>
+        <ul id="chaptersList" style="float: right;">
+
+        </ul>
+
+    </div>
+    
+</body>
+<script type="module" src="sources/courses-mng.js"></script>
+</html>

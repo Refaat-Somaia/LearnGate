@@ -1,0 +1,64 @@
+h2{
+    position: relative;
+    top: 1.5rem;
+    font-size: 2.3rem;
+}
+.container{
+    margin:4rem auto;
+width: 100%;
+}
+.spinner{
+    display: none;
+}
+.announcement{
+    width:max(70%,30rem);
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    transition: 0.1s;
+}
+.info{
+    height: fit-content;
+    width: 70%;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    padding-right: 1rem
+    
+}
+.date{
+    padding-right:1vw ;
+    font-size: 1rem;
+    opacity: 0.7;
+    text-align: center;
+
+}
+.announcement img{
+    width: 8rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin: auto 2rem;
+    background-repeat: no-repeat;
+background-size:contain;
+}
+.announcement:hover{
+    scale: 1.02;
+}
+@media screen and (max-width: 592px) {
+    .announcement{
+        flex-direction: column;
+        width: 20rem;
+        padding: 1rem;
+    }
+    .announcement img{
+        position: relative;
+        left: 5.7rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    .info{
+        width: 100%;
+        line-height: 1rem;
+    }
+}

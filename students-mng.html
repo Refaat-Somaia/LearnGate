@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/43ae18d6cd.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/students-mng.css">
+    <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+
+
+</head>
+<body>
+    <div class="spinner"><div class="loader"></div></div>
+    <div class="top-bar">
+
+        <button class="top-bar-btn" onclick="window.location.href='index.html'"><span>Log out</span><i id="icon-top" class="fa-solid fa-arrow-right-from-bracket" >
+        </i></button>
+        <button class="top-bar-btn" onclick="window.location.href='managemnt.html'"><span>Dashboard</span>
+            <i id="icon-top" class="fa-solid fa-table-cells-large"></i></button>
+            
+    </div>
+
+
+    <div class="control-bar">
+        <p>Number of students: <span id="numberOfStudents"></span></p>
+        <input placeholder="Search" type="text" id="search">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button id="registerBtn">Register new student<i style="margin-left: 0.5rem;" class="fa-solid fa-user-plus"></i></button>
+    </div>
+    <div class="container">
+  
+    </div>
+    <div  id="popup" class="popup">
+        <div style="position: sticky;">
+            <i style="top: 1rem; left: 52%;" onclick="close" id="closePopup" runat="server" class="fa-regular fa-rectangle-xmark fa-xl"></i>
+            <span style="font-size: 4vh; ">Student info</span>
+        </div>
+        <div >
+            <img src="assests/blank-pic.png">
+        </div>
+        <div class="input-container">
+            <input class="input-field" disabled id="name"><span class="name">Name</span>
+            <input class="input-field" disabled id="id"><span class="id">ID:</span>
+            <input class="input-field" disabled id="password"><span class="password">Password:</span>
+            <input class="input-field" disabled id="gpa"><span class="gpa">GPA:</span>
+            <input class="input-field" disabled id="credites"><span class="credites">Credites:</span>
+            <input class="input-field" disabled id="year"><span class="year">Year:</span>
+            <input class="input-field" disabled id="specialization"><span class="specialization">specialization:</span>
+            <select class="input-field" disabled name="status" id="status" ><span class="status">Status:</span>
+                <option value="on going">on going</option>
+                <option value="postponed">postponed</option>
+                <option value="fired">fired</option>
+              </select>
+              <select class="input-field" disabled name="status" id="courses" ><span class="status">courses:</span>
+                <option value="Courses">Courses</option>
+              </select>
+            <input type="number" class="input-field" disabled id="phoneNumber"><span class="phoneNumber">Number:</span>
+            <button id="updateBtn" >Edit<i id="icon" class="fa-solid fa-pen"></i></button>
+            <button id="removeBtn">Remove<i class="fa-solid fa-user-slash"></i></button>
+            <button id="addBtn">Register <i class="fa-solid fa-user-plus"></i></button>
+
+            </div>
+        </div>
+    
+    </div>
+    
+</body>
+<script type="module" src="sources/students-mng.js"></script>
+</html>

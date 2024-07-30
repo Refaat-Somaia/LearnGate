@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/43ae18d6cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="icon" type="image/x-icon" href="assests/graduation-cap-solid (2).svg">
+
+    <script src="theme.js"></script>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="spinner"><div class="loader"></div></div>
+
+    <div class="wrapper">
+        <div class="side-bar">
+        <div class="profile-section">
+            <img id="pix" class="profile-pic" src="assests/blank-pic.png"  />
+            <p id="nameTxt">User Name</p>
+            <p id="faculty">Faculty</p>
+        </div>
+        <div class="side-btn-container"><i id="icon" class="fa-solid fa-house" onclick="window.location.href='home.html'"></i> <button class="side-btn"
+                id="home">Home</button></div>
+        <div class="side-btn-container"><i id="icon" class="fa-solid fa-book" onclick="window.location.href='myCourses.html'"></i> <button class="side-btn" id="myCourses">My
+                courses</button></div>
+        
+        <div class="side-btn-container"><i id="icon" class="fa-solid fa-square-poll-horizontal fa-lg" onclick="window.location.href='grades.html'"></i> <button
+                class="side-btn" id="grades">Results</button></div>
+        <div class="side-btn-container">
+            <i id="icon" class="fa-solid fa-file-lines" onclick="window.location.href='acadamicFile.html'"></i>
+            <button id="acadamicFile" class="side-btn">Acadamic File</button>
+        </div>
+        <div class="side-btn-container">
+            <i id="icon" class="fa-solid fa-user" onclick="window.location.href='myAccount.html'"></i>
+            <button class="side-btn" id="myAccount">My Account</button>
+        </div>
+        <div class="side-btn-container">
+            <i id="themeIcon" class="fa-solid fa-brush" ></i>
+            <button id="theme" class="side-btn">Theme</button>
+        </div>
+        <div class="side-btn-container">
+            <i id="icon" class="fa-solid fa-arrow-right-from-bracket" onclick="window.location.href='index.html'"></i>
+            <button class="side-btn" id="logOut">Log out</button>
+        </div>
+    </div>
+
+    <div class="top-wrapper">
+    <input type="text" id="search" placeholder="Search....">
+ 
+    <i id="newsBtn" class="fa-solid fa-bell">   <div id="redDot"></div></i>
+    <i id="topIcons" onclick="window.location.href='imgUp.html'" class="fa-solid fa-globe"></i>
+    <i id="topIcons" class="fa-solid fa-comment"></i>
+    <i id="darkModeBtn" class="fa-solid fa-moon" id="darkModeBtn"></i>
+    <i id="infoBtn" class="fa-solid fa-circle-info"></i>
+
+</div>
+<div class="stats">
+    <p id="tasksDoneTxt" style="font-size: 3vh;" id="tasksCompleted"><i style="font-size: 4vh; color: inherit; margin-right: -1rem;" class="fa-regular fa-square-check "></i>
+    Completed tasks:</p>
+    <p id="timeTotalTxt" style="font-size: 3vh;" id="tasksCompleted"><i class="fa-solid fa-clock-rotate-left"></i>
+        Total productivity time:</p>
+        <button id="resetStatsBtn">Reset</button>
+</div>
+
+
+<div class="flex">
+    <div class="hero">
+        <div class="hero-txt">
+        <h1 id="welcomeTxt">Morning, Name</h1>
+        <p id="dateTxt">75358</p>
+    </div>
+        <img id="heroImg" class="heroImg"  src="assests/hero-blue.png">
+
+    </div>
+
+      <div class="timer-container">
+        <p style="margin-bottom: -1rem;  height: 4rem;">
+        Productivity Timer<i style="margin-left: 0.5rem;" class="fa-solid fa-stopwatch"></i></p>
+        <div class="timer"><input readonly="readonly" id="timer" type="text" value="0:00:00" ></div>
+        <i  id="timerDown" style=" position: absolute; color: #FC5185; top: 8.3rem; left: 2.5vw;" class="fa-regular fa-square-minus"></i>
+        <button id="startTime" style="margin-left: 2.2rem;">Start</button>
+        <i  id="timerUp" style=" position: absolute; color: #61A3BA; top: 8.3rem;  right: 2.1vw;" class="fa-regular fa-square-plus"></i>
+    </div>
+    </div>
+
+    <div class=flex>
+
+    <div class="overView">
+        <div class="in-overView"  ><p id="gpaTxt">3.1</p>GPA
+            <i class="fa-solid fa-user-graduate" style="color:#51C4D3;"></i></div>
+        <div class="in-overView"  ><p id="creditsTxt">16</p>Credits
+            <i class="fa-solid fa-clock" style="color:#F66B0E;"></i></div>
+            <div class="in-overView"  ><p id="yearTxt">5</p>Year
+                <i class="fa-solid fa-calendar-check" style="color:#FFCC70 ;"></i></div>
+    </div>
+   
+     <div class="grades-diagram">
+        Semester's grades<i style="margin-left: 1vw;" class="fa-solid fa-clipboard-check"></i>
+        <ul class="b">
+            <li class="b1">100<div class="line"></div></li>
+            <li class="b1">80<div class="line"></div></li>
+            <li class="b1">60<div class="line"></div></li>
+            <li class="b1">40<div class="line"></div></li>
+            <li class="b1">20<div class="line"></div></li>
+            <li  class="b1">0<div class="line"></div></li>
+        </ul>
+        <a href="grades.html" style="position: relative;top:15rem; right: 9vw; font-size: 1.1rem; text-decoration: underline; " >View all...</a>
+
+       
+    </div>
+</div>
+    <div  id="popup" class="popup">
+    <div style="position: sticky;">
+        <i onclick="close" id="closePopup" runat="server" class="fa-regular fa-rectangle-xmark fa-xl"></i>
+        <p style="font-size: 4vh; text-align: center;">Themes</p>
+    </div>
+    <div >
+        <img id="themeBlue"   class="themes" src="assests/theme-blue.png">
+        <img id="themeGreen"    class="themes" src="assests/theme-green.png">
+        <img id="themePink"  class="themes" src="assests/theme-pink.png" >
+        <img id="themeRed"   class="themes" src="assests/theme-red.png">
+        <img id="themeNave"  class="themes" src="assests/theme-navy.png">
+        <img id="themePurble"   class="themes" src="assests/theme-purble.png">
+        <img id="themeGrey"   class="themes" src="assests/theme-grey.png">
+        <img id="themeCyan"   class="themes" src="assests/theme-cyan.png">
+        <img id="themeLime"  class="themes" src="assests/theme-lime.png">
+        </div>
+    </div>
+
+    <div class="flex" >
+    <div  id="upComing" >
+        <P class="upComingTitle">Up coming <i class="fa-solid fa-calendar-days " style="margin-left: 0.5rem;"></i></P>
+        <ul id="upComingList">
+            <li>Finals on Jan 27th</li>
+            <li>MPMC Qiuz on Staurday</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <a style="margin-right:2rem; text-decoration: underline;" >View all...</a>
+        </ul>
+    </div>
+        <div class="toDo">
+       <p class="toDoTitle"> My to-do list
+        <i style="margin-left: 1rem; " class="fa-solid fa-clipboard-list fa-bounce"></i></p>
+        <div><input id="toDoInput" placeholder="Add task!" style="border: none;" type="text"><i style="margin-left: 0.5vw;" id="addToDo" class="fa-regular fa-square-plus"></i></div>
+        <ul id="toDoList" style="list-style-type: none; margin-top: 0;">
+
+            <li class="toDoItem"><i class="fa-regular fa-square-check"></i><i class="fa-solid fa-circle-minus"></i></li>
+            <li class="toDoItem"><i class="fa-regular fa-square-check"></i><i class="fa-solid fa-circle-minus"></i></li>
+            <li class="toDoItem"><i class="fa-regular fa-square-check"></i><i class="fa-solid fa-circle-minus"></i></li>
+            <li class="toDoItem"><i class="fa-regular fa-square-check"></i><i class="fa-solid fa-circle-minus"></i></li>
+            <li class="toDoItem"><i class="fa-regular fa-square-check"></i><i class="fa-solid fa-circle-minus"></i></li>
+            <li class="toDoItem"><i class="fa-regular fa-square-check"></i><i class="fa-solid fa-circle-minus"></i></li>
+            <li class="toDoItem"><i class="fa-regular fa-square-check"></i><i class="fa-solid fa-circle-minus"></i></li>
+            
+        </ul>
+        <a style="margin-bottom: 30px; font-size: 1.2rem; text-decoration: underline;" >View all...</a>
+
+    </div>
+</div>
+
+</div>
+<footer id="footer">
+    <ul class="footerList">
+        <li><a href="">Made with javascript, firebase</a></li>
+        <li><a href="">Refatfahad2003@gmail.com</a></li>
+        <li><a href="">0935745337</a></li>
+        <li><a href="">About</a></li>
+        <!-- <img class="footerImgs" src="assests/firebase.png"> -->
+        
+    </ul>
+</footer>
+</body>
+<script src="sources/global.js"></script>
+
+<script src="sources/home.js" type="module"  >
+   
+</script>
+
+</html>

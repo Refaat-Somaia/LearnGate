@@ -1,0 +1,41 @@
+
+
+h2{
+    position: relative;
+    width: 28vh;
+    height: 50px;
+    border-radius: 16px;
+    background: transparent;
+    font-size: 5vh;
+    top: 3vh;
+    text-shadow: rgba(156, 156, 156, 0.2) 0px 18px 18px;
+}
+.wrapper{
+    max-width: 75rem;
+    margin-left: 17rem;
+    display:block;
+  
+}
+
+table{
+    margin-top: 3rem;
+    transition: 0.3s;
+
+}
+.grade-container:hover {
+    transform: scale(1.07);
+    box-shadow: 7px 7px ;
+}
+td,th{
+    font-weight: 600;
+    padding: 1.3vw;
+    text-align:center
+}
+tr>:not(th){
+    transition: 0.3s;
+    opacity: 0.9;
+
+}
+tr:hover >:not(th){
+    opacity: 1;
+}

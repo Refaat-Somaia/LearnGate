@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/43ae18d6cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/grades.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="icon" type="image/x-icon" href="assests/graduation-cap-solid (2).svg">
+
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rsults</title>
+</head>
+
+<body>
+    <div id="d"></div>
+
+<div class="spinner"><div class="loader"></div></div>
+
+    <div class="wrapper">
+        <div class="side-bar">
+            <div class="profile-section">
+                <img id="pix" class="profile-pic" src="assests/blank-pic.png"  />
+                <p id="nameTxt">User Name</p>
+                <p id="faculty">Faculty</p>
+            </div>
+            <div class="side-btn-container"><i id="icon" class="fa-solid fa-house" onclick="window.location.href='home.html'"></i> <button class="side-btn"
+                    id="home">Home</button></div>
+            <div class="side-btn-container"><i id="icon" class="fa-solid fa-book" onclick="window.location.href='myCourses.html'"></i> <button class="side-btn" id="myCourses">My
+                    courses</button></div>
+            
+            <div class="side-btn-container"><i id="icon" class="fa-solid fa-square-poll-horizontal fa-lg" onclick="window.location.href='grades.html'"></i> <button
+                    class="side-btn" id="grades">Results</button></div>
+            <div class="side-btn-container">
+                <i id="icon" class="fa-solid fa-file-lines" onclick="window.location.href='acadamicFile.html'"></i>
+                <button id="acadamicFile" class="side-btn">Acadamic File</button>
+            </div>
+            <div class="side-btn-container">
+                <i id="icon" class="fa-solid fa-user" onclick="window.location.href='myAccount.html'"></i>
+                <button class="side-btn" id="myAccount">My Account</button>
+            </div>
+            <div class="side-btn-container">
+                <i id="themeIcon" id="icon" class="fa-solid fa-brush" ></i>
+                <button id="theme" class="side-btn">Theme</button>
+            </div>
+            <div class="side-btn-container">
+                <i id="icon" class="fa-solid fa-arrow-right-from-bracket" onclick="window.location.href='index.html'"></i>
+                <button class="side-btn" id="logOut">Log out</button>
+            </div>
+        </div>
+    <div class="top-wrapper">
+        <input type="text" id="search" placeholder="Search....">
+        
+        <i id="newsBtn" class="fa-solid fa-bell"></i>
+        <i id="topIcons" class="fa-solid fa-globe"></i>
+        <i id="topIcons" class="fa-solid fa-comment"></i>
+        <i id="darkModeBtn" class="fa-solid fa-moon" id="darkModeBtn"></i>
+        <i id="infoBtn" class="fa-solid fa-circle-info"></i>
+    
+    </div>
+    <h2>My Results</h2>
+
+
+    <div class="stats">
+        <p id="tasksDoneTxt" style="font-size: 3vh;" id="tasksCompleted"><i style="font-size: 4vh; color: inherit; " class="fa-regular fa-square-check "></i>
+        Completed tasks:</p>
+        <p id="timeTotalTxt" style="font-size: 3vh;" id="tasksCompleted"><i class="fa-solid fa-clock-rotate-left"></i>
+            Total productivity time:</p>
+            <button id="resetStatsBtn">Reset</button>
+    </div>
+
+<div class="container-grades">
+    <!-- <div class="grade-container">
+        <p id="courseTitle" style="font-weight: bold; text-align: center;">hgfdhfdh</p>
+        <p id="firstQuiz">First quiz: </p>
+        <p id="labFirst">Lab first part: </p>
+        <p id="midterm">Midterm: </p>
+        <p id="secondQuiz">Second quiz: </p>
+        <p id="labSecond">Lab second part: </p>
+        <p id="final">Final: </p>
+        <p id="final">B+</p>
+    </div>
+    <div class="grade-container">
+        <p id="courseTitle" style="font-weight: bold; text-align: center;">hgfdhfdh</p>
+        <p id="firstQuiz">First quiz: </p>
+        <p id="labFirst">Lab first part: </p>
+        <p id="midterm">Midterm: </p>
+        <p id="secondQuiz">Second quiz: </p>
+        <p id="labSecond">Lab second part: </p>
+        <p id="final">Final: </p>
+        <p id="final">A</p>
+    </div>
+    <div class="grade-container">
+        <p id="courseTitle" style="font-weight: bold; text-align: center;">hgfdhfdh</p>
+        <p id="firstQuiz">First quiz: </p>
+        <p id="labFirst">Lab first part: </p>
+        <p id="midterm">Midterm: </p>
+        <p id="secondQuiz">Second quiz: </p>
+        <p id="labSecond">Lab second part: </p>
+        <p id="final">Final: </p>
+        <p id="final">A+</p>
+    </div>
+    <div class="grade-container">
+        <p id="courseTitle" style="font-weight: bold; text-align: center;">hgfdhfdh</p>
+        <p id="firstQuiz">First quiz: </p>
+        <p id="labFirst">Lab first part: </p>
+        <p id="midterm">Midterm: </p>
+        <p id="secondQuiz">Second quiz: </p>
+        <p id="labSecond">Lab second part: </p>
+        <p id="final">Final: </p>
+        <p id="final">B+</p>
+    </div>
+-->
+<table id="table" style="border-width: 5px; border: solid;">
+    <tr>
+        <th>Subject</th>
+        <th>First quiz</th>
+        <th>Lab-first</th>
+        <th>Midterm</th>
+        <th>Second quiz</th>
+        <th>Lab second</th>
+        <th>Final</th>
+        <th>Grade</th>
+    </tr>
+</table>
+</div> 
+<div  id="popup" class="popup">
+    <div style="position: sticky;">
+        <i onclick="close" id="closePopup" runat="server" class="fa-regular fa-rectangle-xmark fa-xl"></i>
+        <p style="font-size: 4vh; text-align: center;">Themes</p>
+    </div>
+    <div >
+        <img id="themeBlue"   class="themes" src="assests/theme-blue.png">
+        <img id="themeGreen"    class="themes" src="assests/theme-green.png">
+        <img id="themePink"  class="themes" src="assests/theme-pink.png" >
+        <img id="themeRed"   class="themes" src="assests/theme-red.png">
+        <img id="themeNave"  class="themes" src="assests/theme-navy.png">
+        <img id="themePurble"   class="themes" src="assests/theme-purble.png">
+        <img id="themeGrey"   class="themes" src="assests/theme-grey.png">
+        <img id="themeCyan"   class="themes" src="assests/theme-cyan.png">
+        <img id="themeLime"  class="themes" src="assests/theme-lime.png">
+        </div>
+    </div>
+
+</div>
+<footer id="footer">
+    <ul class="footerList">
+        <li><a href="">Made with javascript, firebase</a></li>
+        <li><a href="">Refatfahad2003@gmail.com</a></li>
+        <li><a href="">0935745337</a></li>
+        <li><a href="">About</a></li>
+        
+    </ul>
+</footer>
+</body>
+<script src="sources/global.js"></script>
+<script src="sources/grades.js" type="module"></script>
+
+</html>

@@ -1,0 +1,197 @@
+@font-face {
+    font-family: myFont;
+    src: url(../assests/fonts/Manrope-Medium.ttf);
+    src: url(../assests/fonts/Manrope-Bold.ttf);
+    src: url(../assests/fonts/Manrope-Regular.ttf);
+  }
+ 
+    h2{
+    position: relative;
+    width: 28vh;
+    height: 50px;
+    border-radius: 16px;
+    background: transparent;
+    font-size: 2.3rem;
+    top: 3vh;
+    width: 20rem;
+    text-shadow: rgba(156, 156, 156, 0.2) 0px 18px 18px;
+}
+.side-bar{
+    z-index: 2;
+}
+.personal-img{
+    font-size: 3vh;
+    width: 30vw;
+    margin:-1vh auto;
+    text-align: center;
+    position: relative;
+
+}
+#pix2{
+    position: relative;
+    width: 8rem;
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin: auto;
+}
+
+#pix3{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    right: 11vw;
+    font-size: 0px;
+    background: none;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+#pix3:hover{
+    background-color:#7e7e7e ;
+    opacity: 0.5;
+}
+.input-container{
+    text-align: center;
+    position: relative;   
+  max-width: 900px;
+    height: fit-content
+}
+    .input-field,#updateBtn{
+        position: relative;
+    font-weight: 500;
+    font-size: 2.5vh;
+    border-radius: 8px;
+    color: inherit;
+    border-color: #969696;
+    outline: none;
+    border-style: none;
+    transition: 0.3;
+    text-align: center;
+    background-color: #F9F7F7;
+    width: 25vw;
+    height: 6.5vh;
+    margin-bottom: 5vh;
+    margin-left: 1vw;
+    box-shadow: rgba(166, 173, 178, 0.2) 0px 8px 24px;
+
+    }
+ 
+
+    .input-field::placeholder{
+        opacity: 0.5;
+        color: inherit;
+    }
+
+    #updateBtn{
+        position: relative;
+        width: 20vw;
+        height: 6.5vh;
+        background-color: #EEEEEE;
+        color: inherit;
+        text-align: center;
+        margin-left: 39vw;
+        right: 19.5vw;
+        transition: 0.2s;
+    }
+
+    #updateBtn:hover {
+    color: #F66B0E;
+    
+    transform: scale(1.07);
+    box-shadow: 5px 5px #F66B0E;
+}
+body{
+    transition: 0.5s;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.open > :not(#confirmNote){
+    filter: blur(8px);
+}
+
+
+#confirmNote{
+    display: none;
+    position: fixed;
+    left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  bottom: 15rem;
+    background-color: #ffffff;
+    border: solid 2px ;
+    border-radius:24px ;
+    width: max(20rem,33%);
+    padding: 0 20px;
+    height: 250px;
+    z-index: 8;
+	-webkit-animation:moveOpen 0.7s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes moveOpen 
+	{
+  from {-webkit-transform: scale(0);}
+  50%{-webkit-transform: scale(1.2);}
+    }
+#cancelBtn,#confirmBtn{
+    width: 35%;
+    background-color: #EEEEEE;
+    border: none;
+    font-family: myFont;
+    text-align: center;
+    margin:50px 2vw;
+    border-radius: 8px;
+    color: inherit;
+    transition: 0.2s;
+    font-weight: bold;
+    height: 40px;
+}
+#cancelBtn:hover{
+    background-color: #EEEEEE;
+    color: #F05454;
+    transform: scale(1.07);
+    box-shadow: 5px 5px #F05454;
+}
+#confirmBtn:hover{
+    background-color: #EEEEEE;
+    color: #11999E;
+    transform: scale(1.07);
+    box-shadow: 5px 5px #11999E;
+}
+
+#errMsg{
+    display: none;
+    position: fixed;
+    top: -100px;
+    font-size: 3.5vh;
+    font-weight: bold;
+    padding-top: 2vh;
+    text-align: center;
+    margin-left:-8px ;
+    background-color: tomato;
+    width: 100%;
+    height: 8vh;
+    z-index: 5;
+    color: aliceblue;
+}
+@media screen and (max-width: 45rem) {
+    .input-field{
+        width: 70%;
+  left: 0;
+
+    }
+    #pix2,#pix3{
+        width: 8rem;
+        height: 8rem;
+    }
+}
